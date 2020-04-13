@@ -16,7 +16,7 @@ pool:
 
 stages:
 
-- stage: $(number) stage
+- stage: First
   jobs:
   - job: First
     steps:
