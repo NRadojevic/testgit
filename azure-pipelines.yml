@@ -22,7 +22,7 @@ stages:
     steps:
     - script: echo $(number) stage
 
-- stage: Second stage
+- stage: Second_stage
   jobs:
   - job: Second
     steps:
