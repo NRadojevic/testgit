@@ -18,10 +18,12 @@ stages:
 
 - stage: $(number) stage
   jobs:
-  - job:
+  - job: First
+    steps:
     - script: echo $(number) stage
 
 - stage: Second stage
   jobs:
-  - job:
+  - job: Second
+    steps:
     - bash: echo "Second stage"
