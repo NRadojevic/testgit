@@ -23,6 +23,7 @@ stages:
     - script: echo $(number) stage
 
 - stage: Second_stage
+  dependsOn: First
   jobs:
   - job: Second
     steps:
