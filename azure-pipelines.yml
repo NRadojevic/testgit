@@ -14,13 +14,23 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+resources:
+  repositories:
+  - repository: MyTemplates
+    type: github
+    endpoint: Nradojevic
+    name:  NRadojevic/azure-pipeline-templates
+
 stages:
 
-- stage: First
+- stage: Checkout_repositories
+  displayName: Checkout repositories
   jobs:
-  - job: First
+  - job: Checkout_repos
+    displayName: Checkout repositories
     steps:
-    - script: echo $(number) stage
+    - checkout: self
+    - checkout: MyTemplates
 
 - stage: Second_stage
   dependsOn: First
