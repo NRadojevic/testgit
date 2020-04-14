@@ -31,10 +31,11 @@ stages:
     steps:
     - checkout: self
     - checkout: MyTemplates
-
-- stage: Second_stage
-  dependsOn: Checkout_repositories
-  jobs:
-  - job: Second
-    steps:
     - bash: ls -la
+
+#- stage: Second_stage
+#  dependsOn: Checkout_repositories
+#  jobs:
+#  - job: Second
+#    steps:
+#    - bash: ls -la
