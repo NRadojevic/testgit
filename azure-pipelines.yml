@@ -33,7 +33,7 @@ stages:
     - checkout: MyTemplates
 
 - stage: Second_stage
-  dependsOn: First
+  dependsOn: Checkout_repositories
   jobs:
   - job: Second
     steps:
