@@ -32,6 +32,8 @@ stages:
     - checkout: self
     - checkout: MyTemplates
     - bash: ls -la
+    - bash: ls -la
+      workingDirectory: azure-pipeline-templates
 
 #- stage: Second_stage
 #  dependsOn: Checkout_repositories
