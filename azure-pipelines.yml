@@ -29,7 +29,7 @@ stages:
   - job: Checkout_repos
     displayName: Checkout repositories
     steps:
-    - checkout: self
+#    - checkout: self
     - checkout: templates
     - bash: ls -la
     - bash: ls -la
