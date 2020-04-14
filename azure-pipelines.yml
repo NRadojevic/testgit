@@ -19,7 +19,7 @@ resources:
   - repository: MyTemplates
     type: github
     endpoint: NRadojevic
-    name:  NRadojevic/azure-pipeline-templates
+    name: NRadojevic/azure-pipeline-templates
 
 stages:
 
