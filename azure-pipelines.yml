@@ -34,7 +34,7 @@ stages:
     - bash: ls -la
     - bash: ls -la
       workingDirectory: azure-pipeline-templates
-    - template: azure-pipeline-templates/test-echo.yml
+    - template: test-echo.yml@MyTemplates
 
 #- stage: Second_stage
 #  dependsOn: Checkout_repositories
