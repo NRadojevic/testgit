@@ -16,7 +16,7 @@ pool:
 
 resources:
   repositories:
-  - repository: MyTemplates
+  - repository: templates
     type: github
     endpoint: MyGitHubService
     name: NRadojevic/azure-pipeline-templates
@@ -30,11 +30,11 @@ stages:
     displayName: Checkout repositories
     steps:
     - checkout: self
-    - checkout: MyTemplates
+    - checkout: templates
     - bash: ls -la
     - bash: ls -la
       workingDirectory: azure-pipeline-templates
-    - template: test-echo.yml@MyTemplates
+    - template: test-echo.yml@templates
 
 #- stage: Second_stage
 #  dependsOn: Checkout_repositories
