@@ -30,7 +30,7 @@ stages:
     displayName: Checkout repositories
     steps:
 #   - checkout: self
-    - checkout: templates
+#   - checkout: templates
     - bash: ls -la
 #   - bash: ls -la
 #     workingDirectory: azure-pipeline-templates
