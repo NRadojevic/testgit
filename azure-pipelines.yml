@@ -22,19 +22,7 @@ resources:
     name: NRadojevic/azure-pipeline-templates
 
 stages:
-
-- stage: Checkout_repositories
-  displayName: Checkout repositories
-  jobs:
-  - job: Checkout_repos
-    displayName: Checkout repositories
-    steps:
-#   - checkout: self
-#   - checkout: templates
-    - bash: ls -la
-#   - bash: ls -la
-#     workingDirectory: azure-pipeline-templates
-    - template: test-echo.yml@templates
+- template: test-echo.yml@templates
 
 #- stage: Second_stage
 #  dependsOn: Checkout_repositories
